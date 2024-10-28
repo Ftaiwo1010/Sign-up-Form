@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+   min-height: 100vh;
+   background: #596d48;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 500px;
+}
+
+
+.image {
+    background-image: url('./images/halie-west.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 350px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+
+
+.odin {
+    position: absolute;
+    left: 0;
+    top: 150px;
+    background-color: rgb(0, 0, 0, .5);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    color: white;
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+
+.odin > img {
+    width: 60px;
+}
+
+
+
+.form-container {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    background-color: rgb(243, 243, 243);
+    padding: 30px 0;
+}
+
+
+
+form > p {
+    padding: 15px 40px;
+    font-weight: 600;
+}
+
+form p:first-child {
+    font-size: 16px;
+    font-weight: 700;
+    width: 580px;
+}
+
+
+
+form p:nth-child(2)  {
+    margin-bottom: 40px;
+} 
+
+
+
+.my-wrapper {
+    background-color: white;
+    box-shadow: 1px 4px 4px rgb(137, 137, 137);
+    padding: 20px 40px;
+}
+
+
+.my-wrapper > p {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.form-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+    
+}
+
+
+.form-wrapper > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+}
+
+
+input {
+    padding: 9px 10px;
+    width: 240px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: rgb(11, 11, 187);
+    box-shadow: inset 1px 1px 3px rgb(201, 201, 201);
+    outline: none;
+}
+
+
+
+input[type='password']:invalid {
+    border: 1px solid red;
+}
+
+
+
+.btn{
+    padding: 20px 40px;
+
+}
+
+
+.btn button {
+   border: none;
+   outline: none;
+   padding: 12px 25px;
+   font-size: 17px;
+   color: white;
+   background-color: #596d48;
+   border-radius: 5px;
+   margin-top: 25px;
+   box-shadow: 2px 2px 4px rgb(137, 137, 137);
+   cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+    color: #596d48;
+    font-weight: 700;
+}
